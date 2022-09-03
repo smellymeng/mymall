@@ -10,6 +10,8 @@
         <module>mymall-order</module>
         <module>mymall-product</module>
         <module>mymall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
