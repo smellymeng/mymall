@@ -23,7 +23,7 @@ import com.smellymeng.common.utils.R;
  *
  * @author smellymeng
  * @email smellymeng@gmail.com
- * @date 2022-09-05 17:34:20
+ * @date 2022-09-05 19:10:21
  */
 @RestController
 @RequestMapping("product/skusaleattrvalue")

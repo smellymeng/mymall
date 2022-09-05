@@ -15,7 +15,7 @@ spring:
       config:
         namespace: 7a226a1b-87cb-43e6-8fa2-7728125d6ab4
         extension-configs:
-          - data-id: mymall-mybatis
+          - data-id: mymall-ware-mybatis.yml
             group: dev
             refresh: true
 
