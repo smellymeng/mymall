@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.229.130:3306/mymall_sms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: mymall-coupon
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        namespace: 0cbaea51-4bae-4ed7-9e39-eae723f3f371
+        group: dev
+      config:
+        namespace: 0cbaea51-4bae-4ed7-9e39-eae723f3f371
+        extension-configs:
+          - data-id: mymall-coupon-mybatis
+            group: dev
+            refresh: true
+
+server:
+  port: 7000
+

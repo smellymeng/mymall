@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.229.130:3306/mymall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: mymall-ware
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        namespace: 7a226a1b-87cb-43e6-8fa2-7728125d6ab4
+        group: dev
+      config:
+        namespace: 7a226a1b-87cb-43e6-8fa2-7728125d6ab4
+        extension-configs:
+          - data-id: mymall-mybatis
+            group: dev
+            refresh: true
+
+server:
+  port: 8000

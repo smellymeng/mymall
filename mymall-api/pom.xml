@@ -54,17 +54,17 @@
         </dependency>
 
 <!--nacos注册中心-->
-<!--        <dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>-->
+        </dependency>
 
 <!--    nacos配置中心    -->
-<!--        <dependency>
+        <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-&lt;!&ndash;            <version>自己补</version>&ndash;&gt;
-        </dependency>-->
+<!--            <version>自己补</version>-->
+        </dependency>
 
 <!--  mybatis-plus     -->
         <dependency>
@@ -94,12 +94,13 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-<!--        <dependency>
+        <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>27.0.1-jre</version>
-        </dependency>-->
+        </dependency>
         <!-- https://mvnrepository.com/artifact/commons-lang/commons-lang -->
+        <!--   nacos里面集成了     -->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -107,6 +108,7 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <!--  nacos里面集成了      -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpcore</artifactId>
