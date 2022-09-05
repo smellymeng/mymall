@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.229.130:3306/mymall_pms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: mymall-product
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        namespace: f57ecc8b-12d2-4302-b66e-458b912b83a3
+        group: dev
+      config:
+        namespace: f57ecc8b-12d2-4302-b66e-458b912b83a3
+        extension-configs:
+          - data-id: mymall-coupon-mybatis
+            group: dev
+            refresh: true
+
+server:
+  port: 9000
